@@ -59,7 +59,7 @@ export default class ContactForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit} className={s.form}>
-        <label>
+        <label className={s.formItem}>
           Name
           <input
             type="text"
@@ -71,7 +71,7 @@ export default class ContactForm extends Component {
           />
         </label>
 
-        <label className={s.label}>
+        <label className={s.formItem}>
           Number
           <input
             type="tel"

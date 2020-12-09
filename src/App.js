@@ -3,6 +3,7 @@ import shortid from 'shortid';
 import ContactForm from './components/ContactForm';
 import Filter from './components/Filter';
 import ContactList from './components/ContactList';
+import Section from './components/Section';
 
 class App extends Component {
   state = {
@@ -67,15 +68,19 @@ class App extends Component {
     const visibleContacts = this.visibleContacts();
     return (
       <div>
-        <h1>Phonebook</h1>
-        <ContactForm onSubmit={this.addContact} contacts={contacts} />
+        <Section title="Phonebook">
+          {/* <h1 className={title}>Phonebook</h1> */}
+          <ContactForm onSubmit={this.addContact} contacts={contacts} />
+        </Section>
 
-        <h2>Contacts</h2>
-        <Filter value={filter} onChange={this.makeFilter} />
-        <ContactList
-          contacts={visibleContacts}
-          onDeleteContact={this.deleteContact}
-        />
+        <Section title="Contacts">
+          {/* <h2 className={title}>Contacts</h2> */}
+          <Filter value={filter} onChange={this.makeFilter} />
+          <ContactList
+            contacts={visibleContacts}
+            onDeleteContact={this.deleteContact}
+          />
+        </Section>
       </div>
     );
   }

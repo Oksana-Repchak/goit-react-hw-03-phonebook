@@ -1,10 +1,20 @@
 .list {
-  width: 400px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
 .item:not(:last-child) {
@@ -17,5 +27,12 @@
 }
 
 .button {
-  width: 100px;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid rgb(56, 5, 30);
+  border-radius: 5px;
+  color: rgb(54, 10, 54);
+}
+.button:hover {
+  background: rgb(141, 105, 224);
 }
