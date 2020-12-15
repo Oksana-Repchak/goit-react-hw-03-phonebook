@@ -1,5 +1,5 @@
 .form {
-  font-size: 24px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   width: 450px;
@@ -20,14 +20,14 @@
 }
 
 .input {
-  font-size: 20px;
-  height: 40px;
+  font-size: 18px;
+  height: 30px;
   border-color: #6b6e72;
   margin-bottom: 10px;
 }
 
 .button {
-  background-color: #4267b2;
+  background-color: #424db2;
   padding: 8px 16px;
   border-radius: 3px;
   transition: all 200ms ease;
@@ -45,5 +45,5 @@
   min-width: 180px;
 }
 .button:hover {
-  background: #375ba1;
+  background: #0719b4;
 }
